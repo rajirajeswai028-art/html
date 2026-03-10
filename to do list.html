@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To Do List</title>
+</head>
+<body>
+<h2>My To Do List</h2>
+<input type="text" id="task">
+<button onclick="addTask()">Add</button>
+<ul id="list"></ul>
+<script>
+function addTask() {
+  var task = document.getElementById("task").value;
+  var li = document.createElement("li");
+  li.textContent = task;
+  document.getElementById("list").appendChild(li);
+}
+</script>
+</body>
+</html>
